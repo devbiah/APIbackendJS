@@ -1,90 +1,126 @@
 {
-    "produtos": [
-      {
-        "id": 1,
-        "nome": "Smartphone",
-        "descricao": "Smartphone de última geração",
-        "preco": 1500.00,
-        "imagem": "smartphone.jpg"
-      },
-      {
-        "id": 2,
-        "nome": "Camiseta",
-        "descricao": "Camiseta de algodão",
-        "preco": 30.00,
-        "categoria_id": 2,
-        "imagem": "camiseta.jpg"
-      },
-      {
-        "id": 3,
-        "nome": "Vaso de Flores",
-        "descricao": "Vaso de flores decorativo",
-        "preco": 50.00,
-        "categoria_id": 3,
-        "imagem": "vaso_flores.jpg"
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Smartphone",
+      "descricao": "Smartphone de última geração",
+      "preco": 1500,
+      "imagem": "smartphone.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Camiseta",
+      "descricao": "Camiseta de algodão",
+      "preco": 30,
+      "categoria_id": 2,
+      "imagem": "camiseta.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Vaso de Flores",
+      "descricao": "Vaso de flores decorativo",
+      "preco": 50,
+      "categoria_id": 3,
+      "imagem": "vaso_flores.jpg"
+    },
+    {
+      "nome": "produto teste",
+      "descricao": "uma descricao qualquer",
+      "preco": 600,
+      "imagem": "foto.jpg",
+      "id": "e8801215-9b11-4a43-b979-344afccbfcc9"
+    },
+    {
+      "nome": "produto teste2",
+      "descricao": "uma descricao qualquer",
+      "preco": 700,
+      "imagem": "foto.jpg",
+      "id": "fde550fa-7f2b-4560-bff7-5011f67b6757"
+    },
+    {
+      "nome": "Produto Teste",
+      "preco": 10.99,
+      "id": "9ab73a19-c1c6-4428-9037-0144781ddc41"
+    },
+    {
+      "nome": "Produto Novo",
+      "preco": 15.99,
+      "id": "5e037c35-a4e8-4fa0-a195-592045b1a774"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "email": "joao.silva@example.com",
+      "senha": "123456",
+      "endereco": {
+        "rua": "Rua dos Pinheiros",
+        "numero": 123,
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01234-567"
       }
-    ],
-    "clientes": [
-      {
-        "id": 1,
-        "nome": "João Silva",
-        "email": "joao.silva@example.com",
-        "senha": "123456",
-        "endereco": {
-          "rua": "Rua dos Pinheiros",
-          "numero": 123,
-          "bairro": "Centro",
-          "cidade": "São Paulo",
-          "estado": "SP",
-          "cep": "01234-567"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "email": "maria.oliveira@example.com",
+      "senha": "abcdef",
+      "endereco": {
+        "rua": "Rua das Flores",
+        "numero": 456,
+        "bairro": "Jardim",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "98765-432"
+      }
+    },
+    {
+      "nome": "Maria",
+      "email": "maria@example.com",
+      "senha": "$2a$10$MHKSlLcqxAo8O/Bo84Mh0.SiqbtxV2VSigmMDI.J7l4cpvJvkMXMy",
+      "id": "13042d50-e92e-45c1-a6bb-aca1e605bc95"
+    },
+    {
+      "nome": "João",
+      "email": "joao@example.com",
+      "senha": "$2a$10$fMUNSEMor8oFjjQjSQB87uJ/bpd.T422gOfALkwSwQLSsRltWQLce",
+      "id": "f7822fe5-af46-4ebd-b642-106244e06c04"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "cliente_id": 1,
+      "data_pedido": "2022-01-01",
+      "status": "pendente",
+      "itens": [
+        {
+          "produto_id": 1,
+          "quantidade": 2,
+          "preco_unitario": 1500
+        },
+        {
+          "produto_id": 2,
+          "quantidade": 1,
+          "preco_unitario": 30
         }
-      },
-      {
-        "id": 2,
-        "nome": "Maria Oliveira",
-        "email": "maria.oliveira@example.com",
-        "senha": "abcdef",
-        "endereco": {
-          "rua": "Rua das Flores",
-          "numero": 456,
-          "bairro": "Jardim",
-          "cidade": "Rio de Janeiro",
-          "estado": "RJ",
-          "cep": "98765-432"
+      ]
+    },
+    {
+      "id": 2,
+      "cliente_id": 2,
+      "data_pedido": "2022-01-15",
+      "status": "entregue",
+      "itens": [
+        {
+          "produto_id": 3,
+          "quantidade": 1,
+          "preco_unitario": 50
         }
-      }
-    ],
-    "pedidos": [
-      {
-        "id": 1,
-        "cliente_id": 1,
-        "data_pedido": "2022-01-01",
-        "status": "pendente",
-        "itens": [
-          {
-            "produto_id": 1,
-            "quantidade": 2,
-            "preco_unitario": 1500.00
-          },
-          {
-            "produto_id": 2,
-            "quantidade": 1,
-            "preco_unitario": 30.00
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "cliente_id": 2,
-        "data_pedido": "2022-01-15",
-        "status": "entregue",
-        "itens": [
-          {
-            "produto_id": 3,
-            "quantidade": 1,
-            "preco_unitario": 50.00
-          }
-        ]
-      }
-    ]
-  }
+      ]
+    }
+  ]
+}

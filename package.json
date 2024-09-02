@@ -1,16 +1,18 @@
 {
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.19.2",
     "jest": "^29.7.0",
-    "uuid": "^10.0.0",
-    "uuidv4": "^6.2.13"
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0",
+    "uuid": "^10.0.0"
   },
   "name": "beatriz",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "node index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
