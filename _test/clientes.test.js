@@ -35,18 +35,18 @@ describe('Clientes API', () => {
         expect(res.body.error).toBe('Nome, email e senha devem ser informados');
     });
 
-    // it('Deve atualizar um cliente pelo ID', async () => {
-    //     const clienteAtualizacao = { nome: 'Ana Atualizada' };
-    //     const res = await request(app).put(`/clientes/${clienteId}`).send(clienteAtualizacao);
-    //     expect(res.status).toBe(200);
-    //     expect(res.body.nome).toBe('Ana Atualizada');
-    // });
+    it('Deve atualizar um cliente pelo ID', async () => {
+        const clienteAtualizacao = { nome: 'Ana Atualizada' };
+        const res = await request(app).post(`/clientes/${clienteId}`).send(clienteAtualizacao);
+        expect(res.status).toBe(200);
+        expect(res.body.nome).toBe('Ana Atualizada');
+    });
 
-    // it('Não deve atualizar um cliente que não existe', async () => {
-    //     const res = await request(app).put('/clientes/${clienteId}').send({ nome: 'Cliente Inexistente' });
-    //     expect(res.status).toBe(404);
-    //     expect(res.body.error).toBe('Cliente não encontrado');
-    // });
+    it('Não deve atualizar um cliente que não existe', async () => {
+        const res = await request(app).post('/clientes/${clienteId}').send({ nome: 'Cliente Inexistente' });
+        expect(res.status).toBe(404);
+        expect(res.body.error).toBe('Cliente não encontrado');
+    });
 
     it('Deve deletar um cliente pelo ID', async () => {
         const cliente = { nome: 'Pedro', email: 'pedro@example.com', senha: 'senha111' };

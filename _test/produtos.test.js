@@ -8,6 +8,7 @@ describe('Produtos API', () => {
     const produto = { nome: 'Produto Teste', preco: 10.99 };
     const res = await request(app).post('/produtos').send(produto);
     produtoId = res.body.id;
+    console.log(produtoId)
   });
 
   it('Deve listar todos os produtos', async () => {
@@ -41,18 +42,18 @@ describe('Produtos API', () => {
     expect(res.body.error).toBe('Nome e preço devem ser informados');
   });
 
-//   it('Deve atualizar um produto pelo ID', async () => {
-//     const produtoAtualizacao = { nome: 'Produto Atualizado', preco: 12.99 };
-//     const res = await request(app).put(`/produtos/${produtoId}`).send(produtoAtualizacao);
-//     expect(res.status).toBe(200);
-//     expect(res.body.nome).toBe('Produto Atualizado');
-//   });
+  it('Deve atualizar um produto pelo ID', async () => {
+    const produtoAtualizacao = { nome: 'Produto Atualizado', preco: 12.99 };
+    const res = await request(app).post(`/produtos/${produtoId}`).send(produtoAtualizacao);
+    expect(res.status).toBe(200);
+    expect(res.body.nome).toBe('Produto Atualizado');
+  });
 
-//   it('Não deve atualizar um produto que não existe', async () => {
-//     const res = await request(app).put('/produtos/${produtoId}').send({ nome: 'Produto Inexistente' });
-//     expect(res.status).toBe(404);
-//     expect(res.body.error).toBe('Produto não encontrado');
-//   });
+  it('Não deve atualizar um produto que não existe', async () => {
+    const res = await request(app).post('/produtos/${produtoId}').send({ nome: 'Produto Inexistente' });
+    expect(res.status).toBe(404);
+    expect(res.body.error).toBe('Produto não encontrado');
+  });
 
   it('Deve deletar um produto pelo ID', async () => {
     const produto = { nome: 'Produto Deletar', preco: 22.99 };

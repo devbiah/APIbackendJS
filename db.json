@@ -46,6 +46,46 @@
       "nome": "Produto Novo",
       "preco": 15.99,
       "id": "5e037c35-a4e8-4fa0-a195-592045b1a774"
+    },
+    {
+      "nome": "Produto Teste",
+      "preco": 10.99,
+      "id": "521574de-dfc8-4890-b8e7-81013ec3cbe4"
+    },
+    {
+      "nome": "Produto Novo",
+      "preco": 15.99,
+      "id": "4570bcc8-49ce-410b-ad97-76a0456c91ff"
+    },
+    {
+      "nome": "Produto Teste",
+      "preco": 10.99,
+      "id": "6cb9b40d-461d-454f-bab6-44bb32005e76"
+    },
+    {
+      "nome": "Produto Novo",
+      "preco": 15.99,
+      "id": "289ade2d-e6b2-4829-b36b-97c4c53ed2c7"
+    },
+    {
+      "nome": "Produto Atualizado",
+      "preco": 12.99,
+      "id": "dfafed38-0412-4a82-b680-b4793784e42a"
+    },
+    {
+      "nome": "Produto Novo",
+      "preco": 15.99,
+      "id": "b0742456-700d-4bc8-9c3d-2dcb18980133"
+    },
+    {
+      "nome": "Produto Atualizado",
+      "preco": 12.99,
+      "id": "a3187a22-d053-490c-9c45-2ead47a183fb"
+    },
+    {
+      "nome": "Produto Novo",
+      "preco": 15.99,
+      "id": "c149d9f6-56cf-40cd-888b-af502abfd8d5"
     }
   ],
   "clientes": [
@@ -88,6 +128,54 @@
       "email": "joao@example.com",
       "senha": "$2a$10$fMUNSEMor8oFjjQjSQB87uJ/bpd.T422gOfALkwSwQLSsRltWQLce",
       "id": "f7822fe5-af46-4ebd-b642-106244e06c04"
+    },
+    {
+      "nome": "Maria",
+      "email": "maria@example.com",
+      "senha": "$2a$10$6oYwQfDph2R.nF4fawunmeJQSwpT3ryUhZ/NhK.ee0uvc0Hq9QP.i",
+      "id": "09437501-4707-4e71-8b21-5b9805f91ec8"
+    },
+    {
+      "nome": "João",
+      "email": "joao@example.com",
+      "senha": "$2a$10$tAHY2TAyhiby7/pJ7bbSYeAf/cFYitBVRbSg2HOrVDme7uLbnsisu",
+      "id": "caf7b249-f0ae-4d88-b2f1-fa5e90444ec3"
+    },
+    {
+      "nome": "Maria",
+      "email": "maria@example.com",
+      "senha": "$2a$10$yLfnhPcjgH6ciPpXtFBI4O9cjki.lVK7mpUeahQe0Xrh7yECtkNxC",
+      "id": "82fc8e2f-b311-4fdb-9d44-2b171b5b35af"
+    },
+    {
+      "nome": "João",
+      "email": "joao@example.com",
+      "senha": "$2a$10$sN2DtRjw97Sv5DxUEs0g4eLLiGWpJZma18yefO.ozWaaw2VBLrcnS",
+      "id": "6fe74433-cfa2-4f0e-8b8e-42cd58dd7942"
+    },
+    {
+      "nome": "Maria",
+      "email": "maria@example.com",
+      "senha": "$2a$10$0YAYoPPcNIr/PtKd2.l5fej1M2fHce4OwDGVWU.Qyj/ucjTcBmc7i",
+      "id": "2b8f0b80-6dae-4db0-bd02-090e038aa27a"
+    },
+    {
+      "nome": "João",
+      "email": "joao@example.com",
+      "senha": "$2a$10$rDAJM54ezeoHQNELcowFQe.YlDOcSjMaLDiD0/lEshi9YQpWZ720W",
+      "id": "071b2234-f8c9-4a84-9144-b333da499aaa"
+    },
+    {
+      "nome": "Ana Atualizada",
+      "email": "maria@example.com",
+      "senha": "$2a$10$0JE8QKFQ2qadAwEFzzn3W.bzmHzFUBFjKuXT7hPl1YPz5F8tjK8XO",
+      "id": "de5693ae-7b1b-44bb-9179-4d4e365f6f3a"
+    },
+    {
+      "nome": "João",
+      "email": "joao@example.com",
+      "senha": "$2a$10$n5ReCy7BXY9lcWfLlLCxROmszPtSfQAnVCY6h04Lo2ULJZ8d4E6o6",
+      "id": "b6e76a6f-bc06-4d69-9f41-c71cb82a3f3d"
     }
   ],
   "pedidos": [
