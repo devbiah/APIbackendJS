@@ -1,4 +1,4 @@
-const db = require('./db.json');
+const db = require('../db.json');
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 

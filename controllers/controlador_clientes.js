@@ -1,10 +1,11 @@
-const db = require('./db.json');
+const db = require('../db.json');
 const { v4: uuidv4 } = require('uuid');
 const bcryptjs = require('bcryptjs');
 const fs = require('fs');
 
 
 const listClientes = async (req, res) => {
+    console.log(req.cookies)
     try {
         const clientes = db.clientes;
         res.status(200).json(clientes);
